@@ -151,6 +151,7 @@ header nav ul {
         left: 0; 
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.322);
+        width: 100%;
     }
     header nav .toggle-menu:hover + ul li a {
         padding: 15px;
@@ -230,7 +231,7 @@ header .form i {
     .landing .text {
         width: 100%;
     }
-    .landing .text .content {
+    .landing .text .content  {
         width: 100%;
     }
 }
@@ -243,6 +244,10 @@ header .form i {
 .landing .text .content p{
     font-size: 14px;
     line-height: 2;
+}
+.landing .text .content p::after {
+    content: "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tinciduntnibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquetelit, eget tincidunt.";
+    display: none;
 }
 .landing .change-background {
     color: #DDD;
@@ -895,6 +900,7 @@ header .form i {
     border: 1px solid white;
     border-left: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .subscribe .container p {
     line-height: 2;
