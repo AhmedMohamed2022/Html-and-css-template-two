@@ -219,20 +219,22 @@ header .form i {
     padding: 40px;
     width: 51%;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    .landing .text {
-        width: 66%;
-    }
-}
 .landing .text .content {
-    width: 500px;
+    max-width: 500px;
+    padding: 15px;
 }
 @media (max-width: 767px){
     .landing .text {
         width: 100%;
+        justify-content: center;
     }
     .landing .text .content  {
         width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .landing .text {
+        width: 70%;
     }
 }
 .landing .text .content h2{
